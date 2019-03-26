@@ -1,0 +1,35 @@
+<app-header titulo="fabs"></app-header>
+
+<ion-content>
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-icon color="primary" name="logo-ionic"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon color="youtube" name="logo-angular"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon color="facebook" name="logo-facebook"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+
+    <ion-fab-list side="start">
+      <ion-fab-button><ion-icon color="secondary" name="logo-twitter"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon color="youtube" name="logo-youtube"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item *ngFor="let item of data; let i =index">
+      Item {{ i + 1}}
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>
