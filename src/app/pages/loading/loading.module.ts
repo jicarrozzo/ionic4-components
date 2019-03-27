@@ -5,18 +5,18 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ListPage } from './list.page';
-import { ComponentsModule } from '../../components/components.module';
+import { LoadingPage } from './loading.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 const routes: Routes = [
 	{
 		path: '',
-		component: ListPage
+		component: LoadingPage
 	}
 ];
 
 @NgModule({
 	imports: [ CommonModule, FormsModule, IonicModule, ComponentsModule, RouterModule.forChild(routes) ],
-	declarations: [ ListPage ]
+	declarations: [ LoadingPage ]
 })
-export class ListPageModule {}
+export class LoadingPageModule {}

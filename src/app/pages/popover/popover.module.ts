@@ -5,18 +5,20 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ListPage } from './list.page';
+import { PopoverPage } from './popover.page';
+import { PopInfoComponent } from '../../components/pop-info/pop-info.component';
 import { ComponentsModule } from '../../components/components.module';
 
 const routes: Routes = [
 	{
 		path: '',
-		component: ListPage
+		component: PopoverPage
 	}
 ];
 
 @NgModule({
+	entryComponents: [ PopInfoComponent ],
 	imports: [ CommonModule, FormsModule, IonicModule, ComponentsModule, RouterModule.forChild(routes) ],
-	declarations: [ ListPage ]
+	declarations: [ PopoverPage ]
 })
-export class ListPageModule {}
+export class PopoverPageModule {}

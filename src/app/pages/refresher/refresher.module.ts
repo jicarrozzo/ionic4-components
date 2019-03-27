@@ -5,18 +5,18 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ListPage } from './list.page';
+import { RefresherPage } from './refresher.page';
 import { ComponentsModule } from '../../components/components.module';
 
 const routes: Routes = [
 	{
 		path: '',
-		component: ListPage
+		component: RefresherPage
 	}
 ];
 
 @NgModule({
 	imports: [ CommonModule, FormsModule, IonicModule, ComponentsModule, RouterModule.forChild(routes) ],
-	declarations: [ ListPage ]
+	declarations: [ RefresherPage ]
 })
-export class ListPageModule {}
+export class RefresherPageModule {}

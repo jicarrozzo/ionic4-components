@@ -5,18 +5,19 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ListPage } from './list.page';
+import { SegmentPage } from './segment.page';
 import { ComponentsModule } from '../../components/components.module';
+import { PipesModule } from '../../pipes/pipes.module';
 
 const routes: Routes = [
 	{
 		path: '',
-		component: ListPage
+		component: SegmentPage
 	}
 ];
 
 @NgModule({
-	imports: [ CommonModule, FormsModule, IonicModule, ComponentsModule, RouterModule.forChild(routes) ],
-	declarations: [ ListPage ]
+	imports: [ CommonModule, FormsModule, IonicModule, ComponentsModule, RouterModule.forChild(routes), PipesModule ],
+	declarations: [ SegmentPage ]
 })
-export class ListPageModule {}
+export class SegmentPageModule {}
